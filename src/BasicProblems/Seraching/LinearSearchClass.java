@@ -3,23 +3,23 @@ package BasicProblems.Seraching;
 public class LinearSearchClass {
 
     public static void main(String[] args) {
-        int[] array = {1,3,2,5,7,4};
+        int[] array = {1, 3, 2, 5, 7, 4};
         int target = 5;
-        int result =  linearSearch(array, target);
+        int result = linearSearch(array, target);
 
-        if (result == -1)
-        {
+        if (result == -1) {
             System.out.println("Element not found.");
-        }else
-        {
-            System.out.println("Element found at : "+result);
+        } else {
+            System.out.println("Element found at index: " + result);
         }
     }
 
-    public static int linearSearch(int[] array , int target)
-    {
-
+    public static int linearSearch(int[] array, int target) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                return i;
+            }
+        }
         return -1;
-
     }
 }
