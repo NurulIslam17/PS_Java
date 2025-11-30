@@ -2,6 +2,7 @@ package BasicProblems.Sorting;
 
 public class SelectionSortClass {
 
+    // TC = O(n^2)
     public static void main(String[] args) {
         int[] array = {3, 4, 2, 1, 7, 5, 6};
         int minIndex = -1;
