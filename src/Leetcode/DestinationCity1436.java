@@ -15,7 +15,7 @@ public class DestinationCity1436 {
         for (String[] dest : paths) {
             from.add(dest[0]);
         }
-        System.out.println(from);
+//        System.out.println(from);
         for (String[] to:paths)
         {
            if (!from.contains(to[1]))
