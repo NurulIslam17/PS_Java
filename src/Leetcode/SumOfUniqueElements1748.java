@@ -6,7 +6,7 @@ import java.util.Map;
 public class SumOfUniqueElements1748 {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 2};
+        int[] nums = {1, 2, 3, 4};
         System.out.println(sumOfUnique(nums));
     }
 
@@ -16,9 +16,9 @@ public class SumOfUniqueElements1748 {
         for (int n : nums) {
             map.put(n, map.getOrDefault(n, 0) + 1);
         }
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() == 1) {
-                res += entry.getKey();
+        for (int i : map.keySet()) {
+            if (map.get(i) == 1) {
+                res += i;
             }
         }
         return res;
