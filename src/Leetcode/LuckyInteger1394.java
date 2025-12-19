@@ -6,7 +6,7 @@ import java.util.Map;
 public class LuckyInteger1394 {
 
     public static void main(String[] args) {
-        int[] arr = {1,2,2,3,3,3};
+        int[] arr = {1, 2, 2, 3, 3, 3};
         System.out.println(findLucky(arr));
     }
 
@@ -16,7 +16,7 @@ public class LuckyInteger1394 {
         for (int num : arr) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        for (int i: map.keySet()) {
+        for (int i : map.keySet()) {
             if (i == map.get(i)) {
                 res = Math.max(res, i);
             }
