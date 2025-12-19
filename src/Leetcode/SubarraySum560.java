@@ -40,6 +40,7 @@ public class SubarraySum560 {
             res += map.getOrDefault(diff, 0);
             map.put(curSum, map.getOrDefault(curSum, 0) + 1);
         }
+        System.out.println(map);
 
         return res;
     }
